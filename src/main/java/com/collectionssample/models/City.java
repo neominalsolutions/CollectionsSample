@@ -1,5 +1,7 @@
 package com.collectionssample.models;
 
+import java.text.MessageFormat;
+
 public class City {
     private String name;
     private String plateCode;
@@ -28,5 +30,10 @@ public class City {
 
     public void setPlateCode(String plateCode) {
         this.plateCode = plateCode;
+    }
+
+    @Override
+    public String toString() {
+        return MessageFormat.format("Şehir:{0} Plaka Kodu:{1}", this.name, this.plateCode);
     }
 }

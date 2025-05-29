@@ -29,4 +29,8 @@ public class Country {
         cities.add(city);
     }
 
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
